@@ -49,3 +49,4 @@ function display()  {
     text(firstName + " " + lastName, 38, 285);
     document.getElementById("form").submit();
 }
+

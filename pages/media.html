@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>#Bank Credit Union</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <div class="headerclosed">
+            <a href="../index.html"><img class="headerlogo" src="../images/hashtag_bank_logo-01.svg"></a>
+            <div class="menumobileicon">
+                <div class="container" onclick="myFunction(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+                </div>
+        </div>
+        </div>
+        <nav class="active">
+            <ul class="navul">
+              <li><a class="navli" href="signin.html">SIGN IN</a></li>  
+              <li><a class="navli" href="about.html">ABOUT</a></li>
+              <li><a class="navli" href="media.html">CREATE ACCOUNT</a></li>
+              <li><a class="navli" href="locator.html">ATM & BRANCH <br> LOCATOR</a></li>
+              <li><a class="navli" href="location.html">LOCATION & HOURS</a></li>
+              <li><a class="navli" href="contact.html">CONTACT US</a></li>
+            </ul>
+          </nav>
+    </header>
+    <article class="section__secondary">
+        <img class="image__secondary" src="../images/account.jpeg">
+        <div class="text__secondary">
+            <h1 class="title__secondary">Open an account</h1>
+            <div class="detail__secondary">
+              <h3>Just one click and you're done.</h3>
+              <p> Below fill out the simple form below, and your new debit card will be generated electronically. Add it to your smart phone wallet. We can mail it to your house, if you want, but that's too much.</p>
+                
+            </div>
+        </div>
+      </article>
+    <footer>
+      <h1>Fuck big banks.</h1>
+    </footer>
+    <script src="../script.js"></script>
+    <script src="../p5.js"></script>
+    <!--JS for mobile menu animation-->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('.menumobileicon').click(function(){
+          $('nav').toggleClass('active')
+        })
+      })
+    </script>
+    <script>
+      function myFunction(x) {
+        x.classList.toggle("change");
+      }
+      </script>
+</body>
+</html>
