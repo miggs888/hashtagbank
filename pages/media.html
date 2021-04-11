@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>#Bank Credit Union</title>
+    <link rel="stylesheet" href="../normalize.css">
     <link rel="stylesheet" href="../style.css">
 </head>
 <body>
@@ -36,14 +37,23 @@
             <h1 class="title__secondary">Open an account</h1>
             <div class="detail__secondary">
               <h3>Just one click and you're done.</h3>
-              <p> Below fill out the simple form below, and your new debit card will be generated electronically. Add it to your smart phone wallet. We can mail it to your house, if you want, but that's too much.</p>
-                
+              <p> Fill out the simple form below and your new debit card will be generated electronically. Add it to your smart phone wallet. We can mail it to your house, if you want, but that's just too much.</p>
+              <form id="form" method = "post">
+                <p> First Name: <input type="text" id = "first_name"/></p>
+                <p> Last Name: <input type="text" id = "last_name"/> </p>
+                <p> Optional Favorite Color: <input type="text" id = "favorite_color"/> </p>
+                <p><input id ="submit" class="button" type = "button" onclick="display()" value="Generate My Card"></p>
+            </form>
+            <div class="canvas" id="creditcard"></div>
+            </div>
             </div>
         </div>
       </article>
+      
     <footer>
       <h1>Fuck big banks.</h1>
     </footer>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.6/p5.js"></script>
     <script src="../script.js"></script>
     <script src="../p5.js"></script>
     <!--JS for mobile menu animation-->

@@ -3,10 +3,11 @@ var firstName; //first name
 var lastName; //last name
 let img;
 function preload() {
-  img = loadImage('images/hashtag_bank_logotype-01.png'); // Load the image
+  img = loadImage('../images/hashtag_bank_logotype-01.png'); // Load the image
 }
 function setup(){
-  createCanvas(800, 800);
+  var canvas = createCanvas(windowWidth / 3, windowHeight / 3);
+  canvas.parent('creditcard');
 }
 function getFirstName() {  
     return document.getElementById("first_name").value;
@@ -27,7 +28,7 @@ function display()  {
     drawingContext.shadowColor = 'grey';
     favoriteColor = getFavoriteColor();
     fill(favoriteColor);
-    rect(20, 20, 500, 300, 20);
+    rect(0, 0, 480, 300, 20);
     fill(0);
     noStroke();
     drawingContext.shadowOffsetX = 0;
